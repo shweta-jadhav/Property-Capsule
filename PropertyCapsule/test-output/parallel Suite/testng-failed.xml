@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [parallel Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="parallel Test(failed)">
+    <classes>
+      <class name="homePage.TC_04_VerifyMapMakeTab">
+        <methods>
+          <include name="VerifyMapMakeTab"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- homePage.TC_04_VerifyMapMakeTab -->
+      <class name="homePage.TC_02_VerifyEntLoginBtn">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="VerifyEntLoginBtn"/>
+        </methods>
+      </class> <!-- homePage.TC_02_VerifyEntLoginBtn -->
+      <class name="homePage.TC_03_VerifyTourBookTab">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="VerifyTourBookTab"/>
+        </methods>
+      </class> <!-- homePage.TC_03_VerifyTourBookTab -->
+    </classes>
+  </test> <!-- parallel Test(failed) -->
+</suite> <!-- Failed suite [parallel Suite] -->
